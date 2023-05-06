@@ -2,7 +2,7 @@
   "name": "thy-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://thy96.github.io/portfolio/",
+  "homepage": "https://thy96.github.io/thy_portfolio/",
   "dependencies": {
     "@emotion/react": "^11.10.8",
     "@emotion/styled": "^11.10.8",

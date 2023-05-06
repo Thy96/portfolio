@@ -21,32 +21,32 @@ const Header = ({ textEnter, textLeave }) => {
             <header className={cx("menu-top", toggle ? "change-bg" : "")}>
                 <nav className={cx("pc-menu")}>
                     <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                        <NavLink to="/" className={menu_active}>
+                        <NavLink to="/thy_portfolio/" className={menu_active}>
                             Home
                         </NavLink>
                     </li>
                     <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                        <NavLink to="/about" className={menu_active}>
+                        <NavLink to="/thy_portfolio/about" className={menu_active}>
                             About
                         </NavLink>
                     </li>
                     <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                        <NavLink to="/resume" className={menu_active}>
+                        <NavLink to="/thy_portfolio/resume" className={menu_active}>
                             Resume
                         </NavLink>
                     </li>
                     <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                        <NavLink to="/service" className={menu_active}>
+                        <NavLink to="/thy_portfolio/service" className={menu_active}>
                             Service
                         </NavLink>
                     </li>
                     <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                        <NavLink to="/porfolio" className={menu_active}>
+                        <NavLink to="/thy_portfolio/porfolio" className={menu_active}>
                             Portfolio
                         </NavLink>
                     </li>
                     <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
-                        <NavLink to="/contact" className={menu_active}>
+                        <NavLink to="/thy_portfolio/contact" className={menu_active}>
                             Contact
                         </NavLink>
                     </li>
@@ -66,7 +66,7 @@ const Header = ({ textEnter, textLeave }) => {
                         <nav className={cx("sp-menu")}>
                             <li>
                                 <NavLink
-                                    to="/"
+                                    to="/thy_portfolio/"
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
@@ -75,7 +75,7 @@ const Header = ({ textEnter, textLeave }) => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/about"
+                                    to="/thy_portfolio/about"
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
@@ -84,7 +84,7 @@ const Header = ({ textEnter, textLeave }) => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/resume"
+                                    to="/thy_portfolio/resume"
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
@@ -93,7 +93,7 @@ const Header = ({ textEnter, textLeave }) => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/service"
+                                    to="/thy_portfolio/service"
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
@@ -102,7 +102,7 @@ const Header = ({ textEnter, textLeave }) => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/porfolio"
+                                    to="/thy_portfolio/porfolio"
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
@@ -111,7 +111,7 @@ const Header = ({ textEnter, textLeave }) => {
                             </li>
                             <li>
                                 <NavLink
-                                    to="/contact"
+                                    to="/thy_portfolio/contact"
                                     onClick={handleClick}
                                     className={menu_active}
                                 >

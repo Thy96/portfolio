@@ -29,7 +29,7 @@ function App() {
 
             <Routes>
                 <Route
-                    path="/"
+                    path="/thy_portfolio/"
                     element={
                         <Home
                             textEnter={textEnter}
@@ -37,14 +37,14 @@ function App() {
                         ></Home>
                     }
                 ></Route>
-                <Route path="/about" element={<About></About>}></Route>
-                <Route path="/resume" element={<Resume></Resume>}></Route>
-                <Route path="/service" element={<Service></Service>}></Route>
+                <Route path="/thy_portfolio/about" element={<About></About>}></Route>
+                <Route path="/thy_portfolio/resume" element={<Resume></Resume>}></Route>
+                <Route path="/thy_portfolio/service" element={<Service></Service>}></Route>
                 <Route
-                    path="/porfolio"
+                    path="/thy_portfolio/porfolio"
                     element={<Portfolio></Portfolio>}
                 ></Route>
-                <Route path="/contact" element={<Contact></Contact>}></Route>
+                <Route path="/thy_portfolio/contact" element={<Contact></Contact>}></Route>
             </Routes>
 
             <Footer></Footer>
