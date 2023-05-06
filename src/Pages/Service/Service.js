@@ -40,7 +40,7 @@ const Service = () => {
                             nested
                         >
                             {(close) => (
-                                <div className="modal">
+                                <div className="modal" onClick={close}>
                                     <button className="close">
                                         &times;
                                     </button>
