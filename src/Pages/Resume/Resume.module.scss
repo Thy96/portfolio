@@ -1,0 +1,102 @@
+.resume-page{
+    .flex-justify{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .box{
+            width: 49%;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            h3{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .intro{
+                position: relative;
+                padding-left: 20px;
+                border-left: 2px solid #fff;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50px;
+                    left: -9px;
+                    top: 0;
+                    background: #18d26e;
+                    border: 2px solid #18d26e;
+                }
+                h4{
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #18d26e;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+                h5{
+                    font-size: 16px;
+                    background: rgba(255, 255, 255, 0.15);
+                    padding: 5px 15px;
+                    display: inline-block;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                }
+                p{
+                    padding-bottom: 1rem;
+                    font-size: 16px;
+                    line-height: 160%;
+                }
+                ul{
+                    padding-left: 20px;
+                    li{
+                        list-style: disc;
+                        font-size: 16px;
+                        line-height: 160%;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .resume-page{
+        .flex-justify{
+            .box{
+                .intro{
+                    h4{
+                        line-height: 160%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .resume-page{
+        .flex-justify{
+            .box{
+                width: 100%;
+                h3{
+                    font-size: 25px;
+                }
+                .intro{
+                    h4{
+                        font-size: 16px;
+                    }
+                    p, h5{
+                        font-size: 14px;
+                    }
+                    ul{
+                        li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

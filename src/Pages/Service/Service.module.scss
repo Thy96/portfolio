@@ -1,0 +1,91 @@
+.service-page{
+    .flex-justify{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .box{
+            width: 31%;
+            margin-right: 3.5%;
+            margin-bottom: 40px;
+            text-align: center;
+            background: rgba(204, 204, 204, 0.1);
+            padding: 80px 20px;
+            transition: all ease-in-out 0.3s;
+            border-radius: 10px;
+            &:hover{
+                background: #18d26e;
+                border-color: #18d26e;
+                
+                figure{
+                    background: #fff;
+                    &::before {
+                        background: #35e888;
+                    }
+                }
+            }
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+            &:nth-child(4), &:nth-child(5){
+                margin-bottom: 0;
+            }
+            figure{
+                margin: 0 auto;
+                width: 64px;
+                height: 64px;
+                background: #18d26e;
+                border-radius: 10px;
+                transition: all 0.3s ease-out 0s;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                transform-style: preserve-3d;
+                &::before{
+                    position: absolute;
+                    content: "";
+                    left: -8px;
+                    top: -8px;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(255, 255, 255, 0.15);
+                    border-radius: 10px;
+                    transition: all 0.3s ease-out 0s;
+                    transform: translateZ(-1px);
+                }
+            }
+            h3{
+                font-weight: 700;
+                margin-bottom: 15px;
+                font-size: 160%;
+            }
+            p{
+                line-height: 160%;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .service-page{
+        .flex-justify{
+            .box{
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 15px !important;
+                padding: 40px 20px;
+                &:last-child{
+                    margin-bottom: 0 !important;
+                }
+                figure{
+                    width: 45px;
+                    height: 45px;
+                }
+                h3{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

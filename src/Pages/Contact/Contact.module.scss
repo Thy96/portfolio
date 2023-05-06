@@ -1,0 +1,130 @@
+.contact-page{
+    .flex-justify{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .box{
+            width: 49%;
+            margin: 10px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            border-radius: 10px;
+            figure{
+                background: #fff;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .title{
+                padding-left: 20px;
+                h3{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                ul{
+                    display: flex;
+                    li{
+                        margin-right: 10px;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        a{
+                            width: 25px;
+                            height: 25px;
+                            background: #fff;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            &:hover{
+                                background: #18d26e;
+                            }
+                            svg{
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .submit-contact{
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.08);
+        margin: 10px 0;
+        border-radius: 10px;
+        input, textarea{
+            padding: 10px 15px;
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 0;
+            transition: 0.3s;
+            color: #fff;
+            width: 100%;
+            margin-bottom: 20px;
+            outline: none;
+            border-radius: 5px;
+            &:hover{
+                background: rgba(255, 255, 255, 0.151);
+            }
+        }
+        button[type=submit] {
+            background: #18d26e;
+            border: 0;
+            padding: 10px 30px;
+            color: #fff;
+            transition: 0.4s;
+            border-radius: 4px;
+            font-size: 16px;
+            &:hover{
+                background: #15bb62;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .contact-page{
+        .flex-justify{
+            .box{
+                .title{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .contact-page{
+        .flex-justify{
+            .box{
+                width: 100%;
+                figure{
+                    width: 40px;
+                    height: 40px;
+                }
+                .title{
+                    padding-left: 10px;
+                    h3{
+                        font-size: 16px;
+                        margin-bottom: 5px;
+                    }
+                    p{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

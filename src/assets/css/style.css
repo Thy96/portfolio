@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+body {
+    position: relative;
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 1px;
+    min-height: 100vh;
+    word-break: break-all;
+    cursor: url(../img/cursor.svg), auto;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+svg{
+    width: 20px;
+    height: 20px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.4s;
+    color: #000;
+    cursor: url(../img/pointer.svg), auto;
+}
+
+.active-menu{
+    color: #18d26e !important;
+}
+
+.active-menu::after{
+    width: 100% !important;
+}
+
+input, textarea, button {
+    cursor: url(../img/pointer.svg), auto;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    padding-top: 120px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.title-page{
+    font-size: 80px;
+    line-height: 160%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sub-title-page{
+    text-align: center;
+    font-size: 20px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.sub-title-page::before{
+    content: "";
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.sub-title-page::after{
+    content: "";
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.info-box{
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.bor-right{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.bor-right::after{
+    content: "";
+    background: #18d26e;
+    width: 100px;
+    height: 2px;
+    border-radius: 2px;
+    margin-left: 10px;
+}
+
+.progress, .progress1, .progress2, .progress3, .progress4, .progress5 {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+}
+
+.progress-bar, .progress-bar1, .progress-bar2, .progress-bar3, .progress-bar4, .progress-bar5 {
+    height: 8px;
+    border-radius: 4px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress-striped .progress-bar {
+    background-color: #18d26e;
+    width: 90%;
+    background-image: linear-gradient(
+        45deg,
+        #18d26e 25%,
+        transparent 25%,
+        transparent 50%,
+        #18d26e 50%,
+        #18d26e 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progressAnimation 3s;
+}
+
+.progress-striped .progress-bar1{
+    background-color: #18d26e;
+    width: 30%;
+    background-image: linear-gradient(
+        45deg,
+        #18d26e 25%,
+        transparent 25%,
+        transparent 50%,
+        #18d26e 50%,
+        #18d26e 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progressAnimation1 3s;
+}
+
+.progress-striped .progress-bar2{
+    background-color: #18d26e;
+    width: 90%;
+    background-image: linear-gradient(
+        45deg,
+        #18d26e 25%,
+        transparent 25%,
+        transparent 50%,
+        #18d26e 50%,
+        #18d26e 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progressAnimation2 3s;
+}
+
+.progress-striped .progress-bar3{
+    background-color: #18d26e;
+    width: 80%;
+    background-image: linear-gradient(
+        45deg,
+        #18d26e 25%,
+        transparent 25%,
+        transparent 50%,
+        #18d26e 50%,
+        #18d26e 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progressAnimation3 3s;
+}
+
+.progress-striped .progress-bar4{
+    background-color: #18d26e;
+    width: 70%;
+    background-image: linear-gradient(
+        45deg,
+        #18d26e 25%,
+        transparent 25%,
+        transparent 50%,
+        #18d26e 50%,
+        #18d26e 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progressAnimation4 3s;
+}
+
+.progress-striped .progress-bar5{
+    background-color: #18d26e;
+    width: 50%;
+    background-image: linear-gradient(
+        45deg,
+        #18d26e 25%,
+        transparent 25%,
+        transparent 50%,
+        #18d26e 50%,
+        #18d26e 75%,
+        transparent 75%,
+        transparent
+    );
+    animation: progressAnimation5 3s;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes progressAnimation1 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes progressAnimation2 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progressAnimation3 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progressAnimation4 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes progressAnimation5 {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.popup-content{
+    padding: 0 !important;
+    background: hsla(0, 0%, 100%, 0.9) !important;
+    border-radius: 10px;
+    border: none !important;
+}
+.modal {
+    padding: 20px;
+  
+  }
+  .modal > .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .modal .flex{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+
+  .modal figure{
+    width: 40%;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2);
+    -o-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .modal figure img{
+    width: 100%;
+  }
+  .modal .content {
+    width: 58%;
+    font-size: 16px;
+    line-height: 160%;
+  }
+ 
+  .modal > .close {
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    transition: 0.4s;
+  }
+
+.modal > .close:hover{
+    background: #18d26e;
+    border: 1px solid #18d26e;
+    color: #fff;
+}
+
+/* MUI */
+
+.MuiTabs-root{
+    background: transparent !important;
+    margin-bottom: 20px;
+}
+.MuiTab-root{
+    font-size: 14px !important;
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    margin: 0 3px 0 3px !important;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px !important;
+    font-weight: bold !important;
+    flex-grow: initial !important;
+    overflow: initial !important;
+    white-space: initial !important;
+    cursor: url(../img/pointer.svg), auto !important;
+}
+
+.MuiTab-textColorInherit{
+    opacity: 1 !important;
+}
+
+.MuiTab-root:hover{
+    background: #15bb62 !important;
+}
+
+.MuiTab-root.Mui-selected{
+    background: #18d26e !important;
+}
+
+.MuiTabs-flexContainer{
+    justify-content: center;
+}
+
+.css-jpln7h-MuiTabs-scroller{
+    position: static !important;
+}
+
+.PrivateTabIndicator-root-1, .PrivateTabIndicator-colorSecondary-7{
+    display: none !important;
+}
+
+/* END MUI */
+
+.pc-767{
+    display: block;
+}
+
+.sp-767 {
+    display: none;
+}
+
+.cursor {
+    background: #18d26e;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+@media screen and (max-width: 1024px){
+    .popup-content{
+        width: 90% !important;
+    }
+    .cursor{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .pc-767{
+        display: none;
+    }
+    
+    .sp-767 {
+        display: block;
+    }
+
+    .info-box{
+        padding: 15px;
+    }
+
+    .title-page{
+        font-size: 40px;
+    }
+
+    .sub-title-page{
+        font-size: 16px;
+    }
+
+    .modal{
+        padding: 10px;
+    }
+
+    .modal > .header{
+        font-size: 25px;
+    }
+
+    .modal figure{
+        width: 100%;
+    }
+
+    .modal .content{
+        width: 100%;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .css-13xfq8m-MuiTabPanel-root{
+        padding: 0 !important;
+    }
+
+    .css-19kzrtu{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+        min-width: auto !important;
+        min-height: auto !important;
+    }
+}

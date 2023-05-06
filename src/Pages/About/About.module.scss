@@ -1,0 +1,103 @@
+.about-page{
+    .flex-justify{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        figure{
+            width: 30%;
+            border-radius: 5px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .introduce{
+            width: 68%;
+            h3{
+                font-size: 30px;
+            }
+            ul{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                max-width: 800px;
+                margin: 20px 0;
+                li{
+                    width: 48%;
+                    font-size: 18px;
+                    position: relative;
+                    padding-left: 18px;
+                    margin: 5px 0;
+                    font-weight: bold;
+                    span{
+                        font-weight: normal
+                    }
+                    &::before{
+                        position: absolute;
+                        content: ">";
+                        font-size: 18px;
+                        top: 0;
+                        left: 0;
+                        color: #18d26e;
+                    }
+                }
+            }
+
+            .skill-man{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .pro{
+                    width: 49%;
+                    margin-top: 20px;
+                    .title-percent{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 5px;
+                        h5, p{
+                            font-size: 14px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-page{
+        .flex-justify{
+            figure{
+                width: 100%;
+            }
+            .introduce{
+                width: 100%;
+                margin-top: 10px;
+                h3{
+                    font-size: 20px;
+                }
+                ul{
+                    li{
+                        width: 100%;
+                        font-size: 15px;
+                        &::before{
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .skill-man{
+                    .pro{
+                        width: 100%;
+                        margin-top: 15px;
+                        .title-percent{
+                            h5, p{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

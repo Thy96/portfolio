@@ -1,0 +1,15 @@
+.footer{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 40px 20px;
+}
+
+@media screen and (max-width: 767px){
+    .footer{
+        font-size: 15px;
+    }
+}
