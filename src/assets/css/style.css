@@ -403,7 +403,7 @@ main{
     position: static !important;
 }
 
-.PrivateTabIndicator-root-1, .PrivateTabIndicator-colorSecondary-7{
+.PrivateTabIndicator-root-1, .PrivateTabIndicator-colorSecondary-7, .MuiTabs-scroller{
     display: none !important;
 }
 
