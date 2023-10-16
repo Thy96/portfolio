@@ -24,7 +24,7 @@ const Contact = () => {
                             </figure>
                             <div className={cx("title")}>
                                 <h3>My Address</h3>
-                                <p>A108 Adam Street, New York, NY 535022</p>
+                                <p>166/3 Dang Van Bi street, Ward Binh Tho, Thu Duc city</p>
                             </div>
                         </div>
 

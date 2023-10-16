@@ -19,19 +19,17 @@ const About = () => {
                         </figure>
                         <div className={cx("introduce")}>
                             <h3>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
+                                I'm front-end developer with 2.5+ years of experience designing and building responsive web design and Content Management System (CMS). Proficient with CSS and JS Frameworks.
                             </h3>
                             <ul>
                                 <li>
-                                    Birthday: <span>21 December 1996</span>
+                                    Birthday: <span>21 September 1996</span>
                                 </li>
                                 <li>
                                     Age: <span>27</span>
                                 </li>
                                 <li>
-                                    Website: <span>www.example.com</span>
+                                    Github: <a href="https://github.com/Thy96" target="_blank"><span>https://github.com/Thy96</span></a>
                                 </li>
                                 <li>
                                     Degree: <span>The Degree Of Associate</span>
@@ -55,67 +53,81 @@ const About = () => {
                                 {/* HTML SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>
-                                        <h5>HTML</h5>
-                                        <p>90%</p>
+                                        <h5>HTML5</h5>
                                     </div>
-                                    <div className="progress progress-striped">
+                                    {/* <div className="progress progress-striped">
                                         <div className="progress-bar"></div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 {/* PHP SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>
                                         <h5>PHP</h5>
-                                        <p>30%</p>
                                     </div>
-                                    <div className="progress1 progress-striped">
+                                    {/* <div className="progress1 progress-striped">
                                         <div className="progress-bar1"></div>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                
+
                                 {/* CSS SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>
-                                        <h5>CSS</h5>
-                                        <p>90%</p>
+                                        <h5>CSS/SCSS</h5>
                                     </div>
-                                    <div className="progress2 progress-striped">
+                                    {/* <div className="progress2 progress-striped">
                                         <div className="progress-bar2"></div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 {/* WORDPRESS/CMS SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>
                                         <h5>WORDPRESS/CMS</h5>
-                                        <p>80%</p>
                                     </div>
-                                    <div className="progress3 progress-striped">
+                                    {/* <div className="progress3 progress-striped">
                                         <div className="progress-bar3"></div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 {/* JAVASCRIPT SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>
                                         <h5>JAVASCRIPT</h5>
-                                        <p>70%</p>
                                     </div>
-                                    <div className="progress4 progress-striped">
+                                    {/* <div className="progress4 progress-striped">
                                         <div className="progress-bar4"></div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
-                                 {/* REACTJS SKILL */}
+                                {/* REACTJS SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>
                                         <h5>REACTJS</h5>
-                                        <p>50%</p>
                                     </div>
-                                    <div className="progress5 progress-striped">
+                                    {/* <div className="progress5 progress-striped">
                                         <div className="progress-bar5"></div>
+                                    </div> */}
+                                </div>
+
+                                {/* JS */}
+                                <div className={cx('pro')}>
+                                    <div className={cx('title-percent')}>
+                                        <h5>JQuery</h5>
                                     </div>
+                                    {/* <div className="progress2 progress-striped">
+                                        <div className="progress-bar2"></div>
+                                    </div> */}
+                                </div>
+
+                                {/* Redux */}
+                                <div className={cx('pro')}>
+                                    <div className={cx('title-percent')}>
+                                        <h5>REDUX</h5>
+                                    </div>
+                                    {/* <div className="progress2 progress-striped">
+                                        <div className="progress-bar2"></div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

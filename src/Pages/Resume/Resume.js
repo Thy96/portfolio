@@ -16,12 +16,12 @@ const Resume = () => {
                         <div className={cx('box')}>
                             <h3>Sumary</h3>
                             <div className={cx('intro')}>
-                                <h4>ALICE BARKLEY</h4>
-                                <p>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</p>
+                                <h4>CAO DINH THY</h4>
+                                <p>Hello! I'm a Front-End DEV. Basically, I like creating cool designs and creating polished & meaningful user experiences.
+                                </p>
                                 <ul>
-                                    <li>Portland par 127,Orlando, FL</li>
-                                    <li>(123) 456-7891</li>
-                                    <li>alice.barkley@example.com</li>
+                                    <li>166/3 Dang Van Bi Street, Binh Tho Ward, <br />Thu Duc City, Ho Chi Minh City</li>
+                                    <li>(84) 937804498</li>
                                 </ul>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ const Resume = () => {
                             </div>
                         </div>
 
-                      
+
                     </div>
                 </div>
             </div>

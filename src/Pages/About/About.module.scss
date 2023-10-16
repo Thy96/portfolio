@@ -2,25 +2,29 @@
     .flex-justify{
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: flex-start;
         figure{
             width: 30%;
-            border-radius: 5px;
-            overflow: hidden;
+            -webkit-box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
+            box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
             img{
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
         .introduce{
             width: 68%;
             h3{
-                font-size: 30px;
+                font-size: 1.5vw;
+                word-break: break-word;
             }
             ul{
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 width: 100%;
-                max-width: 800px;
                 margin: 20px 0;
                 li{
                     width: 48%;
@@ -29,8 +33,15 @@
                     padding-left: 18px;
                     margin: 5px 0;
                     font-weight: bold;
+                    a{
+                        span{
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
                     span{
-                        font-weight: normal
+                        font-weight: normal;
+                        color: #fff;
+                        
                     }
                     &::before{
                         position: absolute;
@@ -48,17 +59,40 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 .pro{
-                    width: 49%;
+                    width: 48%;
                     margin-top: 20px;
                     .title-percent{
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 5px;
                         h5, p{
-                            font-size: 14px;
+                            font-size: 16px;
                             font-weight: normal;
+                            position: relative;
+                            padding-left: 18px;
+                            &::before{
+                                position: absolute;
+                                content: ">";
+                                font-size: 16px;
+                                font-weight: bold;
+                                top: -1px;
+                                left: 0;
+                                color: #18d26e;
+                            }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .about-page{
+        .flex-justify{
+            .introduce{
+                h3{
+                    font-size: 2.5vw;
                 }
             }
         }
@@ -88,7 +122,7 @@
                 }
                 .skill-man{
                     .pro{
-                        width: 100%;
+                        width: 48%;
                         margin-top: 15px;
                         .title-percent{
                             h5, p{

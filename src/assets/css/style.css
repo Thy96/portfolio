@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto Slab', serif;
     letter-spacing: 1px;
     min-height: 100vh;
-    word-break: break-all;
+    word-break: break-word;
     cursor: url(../img/cursor.svg), auto;
 }
 body::before{
