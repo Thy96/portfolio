@@ -29,7 +29,7 @@ const About = () => {
                                     Age: <span>27</span>
                                 </li>
                                 <li>
-                                    Github: <a href="https://github.com/Thy96" target="_blank"><span>https://github.com/Thy96</span></a>
+                                    Github: <a href="https://github.com/Thy96" target="_blank" rel="noreferrer"><span>https://github.com/Thy96</span></a>
                                 </li>
                                 <li>
                                     Degree: <span>The Degree Of Associate</span>

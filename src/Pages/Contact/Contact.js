@@ -41,7 +41,7 @@ const Contact = () => {
                                 <h3>Social Profiles</h3>
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 512 512"
@@ -51,7 +51,7 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 320 512"
@@ -61,7 +61,7 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 448 512"

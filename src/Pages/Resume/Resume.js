@@ -52,7 +52,7 @@ const Resume = () => {
                                     <li>I have been working for 6 months in freelancer projects.</li>
                                     <li>I started working at Hong Kong's 2epay company for about 1 year in website design management.</li>
                                     <li>I started working at Japanese company Protage for about a year and a half on designing effects.</li>
-                                    <li>I started working at Japanese company Allgrowlabo for about 3 year on WORDPRESS/CMS.</li>
+                                    <li>I started working at Japanese company Allgrowlabo for about 3 year on WORDPRESS/CMS and 1 year on ReactJS.</li>
                                     <li>Design mobile website and programming PC according to customer requirements.</li>
                                 </ul>
                             </div>
