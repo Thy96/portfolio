@@ -11,6 +11,7 @@ const images = {
     portfolio_4: require('../img/portfolio-4.jpg'),
     portfolio_5: require('../img/portfolio-5.jpg'),
     portfolio_6: require('../img/portfolio-6.jpg'),
+    portfolio_7: require('../img/portfolio-7.jpg'),
 }
 
 export default images
