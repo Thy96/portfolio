@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/thy_portfolio/static/css/main.6267d857.css",
-    "main.js": "/thy_portfolio/static/js/main.6538fbb8.js",
+    "main.js": "/thy_portfolio/static/js/main.742d5ca3.js",
     "static/js/787.267b80b0.chunk.js": "/thy_portfolio/static/js/787.267b80b0.chunk.js",
     "static/media/background.gif": "/thy_portfolio/static/media/background.fa83757e2d6da73c5a8d.gif",
     "static/media/man.jpg": "/thy_portfolio/static/media/man.1f27ab8e972111dbf830.jpg",
     "static/media/portfolio-2.jpg": "/thy_portfolio/static/media/portfolio-2.f6a28adc61c137fbce83.jpg",
     "static/media/portfolio-4.jpg": "/thy_portfolio/static/media/portfolio-4.a1e79009d0f1b2edf67b.jpg",
+    "static/media/portfolio-7.jpg": "/thy_portfolio/static/media/portfolio-7.134caade31db77cea4a6.jpg",
     "static/media/portfolio-5.jpg": "/thy_portfolio/static/media/portfolio-5.7dc65ad457bd8bd86bce.jpg",
     "static/media/web-design.jpg": "/thy_portfolio/static/media/web-design.0cdd45e77d7c6fb6b731.jpg",
     "static/media/portfolio-3.jpg": "/thy_portfolio/static/media/portfolio-3.72a8b9712a2c09ac8c86.jpg",
@@ -20,11 +21,11 @@
     "static/media/cursor.svg": "/thy_portfolio/static/media/cursor.dd8abc7f1a2b210de344.svg",
     "index.html": "/thy_portfolio/index.html",
     "main.6267d857.css.map": "/thy_portfolio/static/css/main.6267d857.css.map",
-    "main.6538fbb8.js.map": "/thy_portfolio/static/js/main.6538fbb8.js.map",
+    "main.742d5ca3.js.map": "/thy_portfolio/static/js/main.742d5ca3.js.map",
     "787.267b80b0.chunk.js.map": "/thy_portfolio/static/js/787.267b80b0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6267d857.css",
-    "static/js/main.6538fbb8.js"
+    "static/js/main.742d5ca3.js"
   ]
 }
