@@ -7,9 +7,12 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import SwipeableViews from "react-swipeable-views";
 
+import { useTranslation } from 'react-i18next';
+
 const cx = classnames.bind(styles);
 
 const Porfolio = () => {
+    const { t } = useTranslation()
     const [value, setValue] = useState(0);
 
     const handleChange = (event, value) => {
@@ -23,11 +26,11 @@ const Porfolio = () => {
     return (
         <main className={cx("portfolio-page")}>
             <div className="wrapper">
-                <div className="title-page">PORTFOLIO</div>
-                <div className="sub-title-page">MY WORKS</div>
+                <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.portfolio_page.title_page')}</div>
+                <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.portfolio_page.sub_title_page')}</div>
 
                 <div className="info-box">
-                    <Tabs value={value} onChange={handleChange}>
+                    <Tabs value={value} onChange={handleChange} className="p-ani-fadeInBlur p-delay_1s">
                         <Tab label="ALL" />
                         <Tab label="WORDPRESS" />
                         <Tab label="REACT" />
@@ -39,7 +42,7 @@ const Porfolio = () => {
                         animateHeight={true}
                     >
                         <div className={cx("flex", "flex-justify")}>
-                            <a href="https://thy96.github.io/trasua-app/" className={cx("box")} target="_blank" rel="noreferrer">
+                            <a href="https://thy96.github.io/trasua-app/" className={cx("box", "p-ani-fadeInBlur", "p-delay_1s")} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={images.portfolio_1} alt="" />
                                 </figure>
@@ -55,7 +58,8 @@ const Porfolio = () => {
                                     </i>
                                 </h4>
                             </a>
-                            <a href="https://www.n-aging.co.jp/" className={cx("box")} target="_blank" rel="noreferrer">
+
+                            <a href="https://www.n-aging.co.jp/" className={cx("box", "p-ani-fadeInBlur", "p-delay_3s")} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={images.portfolio_2} alt="" />
                                 </figure>
@@ -72,7 +76,7 @@ const Porfolio = () => {
                                 </h4>
                             </a>
 
-                            <a href="https://gold-fuji.main.jp/sS7PmQZb/" className={cx("box")} target="_blank" rel="noreferrer">
+                            <a href="https://gold-fuji.main.jp/sS7PmQZb/" className={cx("box", "p-ani-fadeInBlur", "p-delay_6s")} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={images.portfolio_3} alt="" />
                                 </figure>
@@ -89,7 +93,7 @@ const Porfolio = () => {
                                 </h4>
                             </a>
 
-                            <a href="https://sample-net4.main.jp/submisson/07/20230707_nara-pgs/index.html" className={cx("box")} target="_blank" rel="noreferrer">
+                            <a href="https://sample-net4.main.jp/submisson/07/20230707_nara-pgs/index.html" className={cx("box", "p-ani-fadeInBlur", "p-delay_9s")} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={images.portfolio_4} alt="" />
                                 </figure>
@@ -106,7 +110,7 @@ const Porfolio = () => {
                                 </h4>
                             </a>
 
-                            <a href="https://www.west-house.net/" className={cx("box")} target="_blank" rel="noreferrer">
+                            <a href="https://www.west-house.net/" className={cx("box", "p-ani-fadeInBlur", "p-delay_12s")} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={images.portfolio_5} alt="" />
                                 </figure>
@@ -123,7 +127,7 @@ const Porfolio = () => {
                                 </h4>
                             </a>
 
-                            <a href="https://thy96.github.io/thoitiet24h/" className={cx("box")} target="_blank" rel="noreferrer">
+                            <a href="https://thy96.github.io/thoitiet24h/" className={cx("box", "p-ani-fadeInBlur", "p-delay_15s")} target="_blank" rel="noreferrer">
                                 <figure>
                                     <img src={images.portfolio_7} alt="" />
                                 </figure>

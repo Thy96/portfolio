@@ -2,54 +2,53 @@ import React from "react";
 import classNames from "classnames/bind";
 import styles from "./About.module.scss";
 import images from "../../assets/img";
+import { useTranslation } from 'react-i18next';
 
 const cx = classNames.bind(styles);
 
 const About = () => {
+    const { t } = useTranslation()
     return (
         <main className={cx("about-page")}>
             <div className="wrapper">
-                <div className="title-page">ABOUT</div>
-                <div className="sub-title-page">LEARN MORE ABOUT ME</div>
+                <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.about_page.title_page')}</div>
+                <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.about_page.sub_title_page')}</div>
 
                 <div className="info-box">
                     <div className={cx("flex", "flex-justify")}>
-                        <figure>
+                        <figure className="p-ani-fadeInLeft p-delay_3s">
                             <img src={images.man} alt="man-avatar" />
                         </figure>
                         <div className={cx("introduce")}>
-                            <h3>
-                                I'm front-end developer with 2.5+ years of experience designing and building responsive web design and Content Management System (CMS). Proficient with CSS and JS Frameworks.
+                            <h3 className="p-ani-fadeInRight p-delay_6s">
+                                {t('main.about_page.introduce_about_me1')}
                             </h3>
-                            <ul>
+                            <ul className="p-ani-fadeInRight p-delay_9s">
                                 <li>
-                                    Birthday: <span>21 September 1996</span>
+                                    {t('main.about_page.introduce_about_me2.title_birthday')}: <span>{t('main.about_page.introduce_about_me2.date_birthday')}</span>
                                 </li>
                                 <li>
-                                    Age: <span>27</span>
+                                    {t('main.about_page.introduce_about_me2.title_age')}: <span>27</span>
                                 </li>
                                 <li>
                                     Github: <a href="https://github.com/Thy96" target="_blank" rel="noreferrer"><span>https://github.com/Thy96</span></a>
                                 </li>
                                 <li>
-                                    Degree: <span>The Degree Of Associate</span>
+                                    {t('main.about_page.introduce_about_me2.title_degree')}: <span>{t('main.about_page.introduce_about_me2.vocational_degree')}</span>
                                 </li>
                                 <li>
-                                    Phone: <span>0937804498</span>
+                                    {t('main.about_page.introduce_about_me2.title_phone')}: <span>0937804498</span>
                                 </li>
                                 <li>
                                     Email: <span>caodinhthy1996@gmail.com</span>
                                 </li>
                                 <li>
-                                    City: <span>Hồ Chí Minh</span>
-                                </li>
-                                <li>
-                                    Freelance: <span>Available</span>
+                                    {t('main.about_page.introduce_about_me2.title_city')}: <span>{t('main.about_page.introduce_about_me2.name_city')}</span>
                                 </li>
                             </ul>
 
-                            <h4 className="bor-right">Skill</h4>
-                            <div className={cx('skill-man', 'flex')}>
+                            <h4 className="bor-right p-ani-fadeInRight p-delay_12s">{t('main.about_page.skill')}</h4>
+                            <div className={cx('skill-man', 'flex', "p-ani-fadeInRight", "p-delay_12s")}>
                                 {/* HTML SKILL */}
                                 <div className={cx('pro')}>
                                     <div className={cx('title-percent')}>

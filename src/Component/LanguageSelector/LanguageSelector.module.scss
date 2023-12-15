@@ -1,0 +1,45 @@
+.btnchangelanguage{
+    background: none;
+    border: none;
+    height: 28px;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    img{
+        margin-right: 5px;
+        border-radius: 50%;
+        transition: 0.4s;
+    }
+    span{
+        position: relative;
+        transition: 0.4s;
+        &::after{
+            position: absolute;
+            content: "";
+            background: #18d26e;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+    }
+    &:hover{
+        span{
+            color: #18d26e;
+            &::after{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .change-color{
+        color: #111;
+    }
+}

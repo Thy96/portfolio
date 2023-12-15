@@ -3,9 +3,13 @@ import { NavLink } from "react-router-dom";
 import classnames from "classnames/bind";
 import styles from "./Header.module.scss";
 
+import { useTranslation } from 'react-i18next';
+import { LanguageSelector } from "../LanguageSelector/LanguageSelector";
+
 const cx = classnames.bind(styles);
 
-const Header = ({ textEnter, textLeave }) => {
+const Header = ({ hoverZoomOut, hoverZoomIn }) => {
+    const { t } = useTranslation()
     const [toggle, setToggle] = useState(false);
 
     const handleClick = () => {
@@ -20,46 +24,52 @@ const Header = ({ textEnter, textLeave }) => {
             <div className={cx("glitch")}></div>
             <header className={cx("menu-top", toggle ? "change-bg" : "")}>
                 <nav className={cx("pc-menu")}>
-                    <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                         <NavLink to="/thy_portfolio/" className={menu_active}>
-                            Home
+                            {t('header.home')}
                         </NavLink>
                     </li>
-                    <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                         <NavLink to="/thy_portfolio/about" className={menu_active}>
-                            About
+                            {t('header.about')}
                         </NavLink>
                     </li>
-                    <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                         <NavLink to="/thy_portfolio/resume" className={menu_active}>
-                            Resume
+                            {t('header.resume')}
                         </NavLink>
                     </li>
-                    <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                         <NavLink to="/thy_portfolio/service" className={menu_active}>
-                            Service
+                            {t('header.service')}
                         </NavLink>
                     </li>
-                    <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                         <NavLink to="/thy_portfolio/porfolio" className={menu_active}>
-                            Portfolio
+                            {t('header.portfolio')}
                         </NavLink>
                     </li>
-                    <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                         <NavLink to="/thy_portfolio/contact" className={menu_active}>
-                            Contact
+                            {t('header.contact')}
                         </NavLink>
+                    </li>
+                    <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
+                        <LanguageSelector></LanguageSelector>
                     </li>
                 </nav>
 
-                <button
-                    onClick={handleClick}
-                    className={cx("btn-toggle", toggle ? "active-button" : "")}
-                >
-                    <span className={cx("line", "line1")}></span>
-                    <span className={cx("line", "line2")}></span>
-                    <span className={cx("line", "line3")}></span>
-                </button>
+                <div className={cx('flex-button')}>
+                    <LanguageSelector toggle={toggle}></LanguageSelector>
+                    <button
+                        onClick={handleClick}
+                        className={cx("btn-toggle", toggle ? "active-button" : "")}
+                    >
+                        <span className={cx("line", "line1")}></span>
+                        <span className={cx("line", "line2")}></span>
+                        <span className={cx("line", "line3")}></span>
+                    </button>
+                </div>
 
                 <div className={cx(toggle ? "show-menu" : "hidden-menu")}>
                     {toggle ? (
@@ -70,7 +80,7 @@ const Header = ({ textEnter, textLeave }) => {
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
-                                    Home
+                                    {t('header.home')}
                                 </NavLink>
                             </li>
                             <li>
@@ -79,7 +89,7 @@ const Header = ({ textEnter, textLeave }) => {
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
-                                    About
+                                    {t('header.about')}
                                 </NavLink>
                             </li>
                             <li>
@@ -88,7 +98,7 @@ const Header = ({ textEnter, textLeave }) => {
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
-                                    Resume
+                                    {t('header.resume')}
                                 </NavLink>
                             </li>
                             <li>
@@ -97,7 +107,7 @@ const Header = ({ textEnter, textLeave }) => {
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
-                                    Service
+                                    {t('header.service')}
                                 </NavLink>
                             </li>
                             <li>
@@ -106,7 +116,7 @@ const Header = ({ textEnter, textLeave }) => {
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
-                                    Portfolio
+                                    {t('header.portfolio')}
                                 </NavLink>
                             </li>
                             <li>
@@ -115,9 +125,10 @@ const Header = ({ textEnter, textLeave }) => {
                                     onClick={handleClick}
                                     className={menu_active}
                                 >
-                                    Contact
+                                    {t('header.contact')}
                                 </NavLink>
                             </li>
+
                         </nav>
                     ) : (
                         <></>

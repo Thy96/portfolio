@@ -1,0 +1,113 @@
+{
+    "header": {
+        "home": "Trang Chủ",
+        "about": "Giới Thiệu",
+        "resume": "Lý Lịch",
+        "service": "Dịch Vụ",
+        "portfolio": "Dự Án",
+        "contact": "Liên Hệ"
+    },
+    "main": {
+        "home_page": {
+            "title_main": "CHÀO MỪNG BẠN!!!",
+            "title_say_hi": "Xin chào!! Tôi tên Thy là một",
+            "description": "Để trở thành 1 lập trình viên chuyên nghiệp. Cách để bắt đầu mọi thứ chính là ngừng nói và hãy làm đi. Và thành công không bao giờ có dấu chân của những kẻ lười biếng.",
+            "social_title": "LIÊN HỆ CHO TÔI"
+        },
+        "about_page": {
+            "title_page": "GIỚI THIỆU",
+            "sub_title_page": "SƠ LƯỢC VỀ TÔI",
+            "introduce_about_me1": "Tôi là nhà phát triển front-end với hơn 2,5 năm kinh nghiệm trong việc thiết kế, xây dựng hệ thống quản lý nội dung và thiết kế web đáp ứng (CMS). Có kinh nghiệm làm việc với HTML5/CSS/JS/Wordpress và JS Framework.",
+            "introduce_about_me2": {
+                "title_birthday": "Sinh ngày",
+                "date_birthday": "21/09/1996",
+                "title_age": "Tuổi",
+                "title_degree": "Bằng cấp",
+                "vocational_degree": "Cao Đẳng",
+                "title_phone": "Số DT",
+                "title_city": "Thành Phố",
+                "name_city": "Hồ Chí Minh"
+            },
+            "skill": "Kỹ Năng"
+        },
+        "resume_page": {
+            "title_page": "SƠ YẾU LÝ LỊCH",
+            "sub_title_page": "TÓM TẮT",
+            "sumary": {
+                "title": "Tiểu Sử",
+                "description": "Xin chào! Tôi là một nhà phát triển website (FE). Tôi thích tạo ra những thiết kế thú vị và tạo ra những trải nghiệm người dùng thực tế và có ý nghĩa.",
+                "address": "53/14/8/9 Đường số 4 , Phường Trường Thọ, TP. Thủ Đức, TP. Hồ Chí Minh."
+            },
+            "education": {
+                "title": "Học Vấn",
+                "review_description1": "Học về thiết kế đồ họa cho website",
+                "review_description2": "Thiết kế giao diện website bằng HTML, CSS, JS cho khách hàng.",
+                "review_description3": "Quan sát, tìm hiểu và nắm bắt tốt yếu tố quan trọng của khách hàng.",
+                "review_description4": "Cải thiện kỹ năng làm việc với website.",
+                "review_description5": "Hỗ trợ và kiểm tra sản phẩm 1 cách tốt nhất.",
+                "review_description6": "Tham gia các khóa học về kỹ năng lập trình viên tại trường."
+            },
+            "professional_experience": {
+                "title": "Kinh Nghiệm Thực Tế",
+                "present": "Present",
+                "review_description1": "Tôi đã làm việc được 6 tháng trong các dự án freelancer.",
+                "review_description2": "Tôi bắt đầu làm việc tại công ty 2epay của Hồng Kông được khoảng 1 năm ở vị trí quản lý thiết kế website.",
+                "review_description3": "Tôi bắt đầu làm việc tại công ty Protage của Nhật Bản trong khoảng một năm rưỡi về thiết kế hiệu ứng.",
+                "review_description4": "Tôi bắt đầu làm việc tại công ty Nhật Bản Allgrowlabo khoảng 3 năm về WORDPRESS/CMS và 1 năm về ReactJS.",
+                "review_description5": "Thiết kế website mobile và lập trình PC theo yêu cầu của khách hàng."
+            }
+        },
+        "service_page": {
+            "title_page": "DỊCH VỤ",
+            "sub_title_page": "DỊCH VỤ WEBSITE",
+            "title_web_design": "Thiết Kế Website",
+            "web_design_description": "Chúng tôi sẽ trao đổi về thiết kế trang web đó là tạo ra một trang web đẹp mắt và mới mẻ cho công ty bạn",
+            "title_web_design_popup": "Thiết Kế Website",
+            "web_design_description_popup": "Chúng tôi sẽ trao đổi về thiết kế trang web đó là tạo ra một trang web đẹp mắt và mới mẻ cho công ty bạn, đồng thời giúp cho khách hàng dễ tiếp cận và sử dụng 1 đơn giản nhất",
+
+            "title_web_development": "Phát Triển Web",
+            "web_development_description": "Quá trình phát triển web bao gồm việc sử dụng các yếu tố về mặt kỹ thuật và mã hóa được xác định",
+            "title_web_development_popup": "Phát Triển Web",
+            "web_development_description_popup": "Quá trình phát triển web bao gồm việc lấy các yếu tố về mặt kỹ thuật và mã hóa được xác định trong quá trình thiết kế và mã hóa chúng thành một website hoản chỉnh có thể tùy chỉnh.",
+
+            "title_mobile_development": "Phát Triển Mobile",
+            "mobile_development_description": "Với tầm quan trọng của việc sử dụng và nhu cầu ngày càng tăng của điện thoại thông minh và thiết bị di động",
+            "title_mobile_development_popup": "Phát Triển Mobile",
+            "mobile_development_description_popup": "Với tầm quan trọng của việc sử dụng và nhu cầu ngày càng tăng của điện thoại thông minh và thiết bị di động, việc đưa phát triển ứng dụng vào như một phần của dịch vụ thiết kế web đã trở nên vô cùng quan trọng. do nhóm của chúng tôi phát triển dựa trên việc cung cấp các tính năng thú vị kết hợp với chức năng nâng cao. Với một ứng dụng dành cho thiết bị di động sẵn có, bạn có thể tăng phạm vi tiếp cận thương hiệu của mình và mở rộng tầm nhìn của nó. Bạn có thể tạo một ứng dụng chuyên nghiệp dễ sử dụng để mang lại sự dễ dàng chức năng và một sự hấp dẫn đáng kinh ngạc.",
+
+            "title_seo_optimization": "Tối ưu hóa SEO",
+            "seo_optimization_description": "Tối ưu hóa công cụ tìm kiếm (SEO) là quá trình cải thiện khả năng hiển thị của",
+            "title_seo_optimization_popup": "Tối ưu hóa SEO",
+            "seo_optimization_description_popup": "Tối ưu hóa công cụ tìm kiếm (SEO) là quá trình cải thiện khả năng hiển thị của một trang web trong công cụ tìm kiếm. Người tiêu dùng đặt niềm tin rất lớn vào công cụ tìm kiếm để tìm thấy thứ họ cần. Google 34.000 lượt tìm kiếm mỗi giây. Những tìm kiếm đó liên quan đến việc tìm kiếm sản phẩm, đánh giá thương hiệu và tra cứu địa điểm kinh doanh.",
+
+            "title_social_media": "Truyền thông xã hội",
+            "social_media_description": "Truyền thông xã hội, đã trở thành một công cụ thiết yếu để tiếp thị một doanh nghiệp trực tuyến",
+            "title_social_media_popup": "Truyền thông xã hội",
+            "social_media_description_popup": "Truyền thông xã hội, đã trở thành một công cụ thiết yếu để tiếp thị một doanh nghiệp trực tuyến, cung cấp cho bạn một nền tảng để tương tác và thông báo cho mọi người về bản thân và thương hiệu của bạn."
+        },
+        "portfolio_page": {
+            "title_page": "DANH MỤC",
+            "sub_title_page": "CÁC DỰ ÁN"
+        },
+        "contact_page": {
+            "title_page": "LIÊN HỆ",
+            "sub_title_page": "LIÊN HỆ CHO TÔI",
+            "my_address": "Đia Chỉ",
+            "address": "53/14/8/9 Đường số 4 , Phường Trường Thọ, TP. Thủ Đức, TP. Hồ Chí Minh.",
+            "social_profiles": "Mạng Xã Hội",
+            "call_me": "Số DT",
+            "your_name": "Tên của bạn",
+            "your_email": "Email của bạn",
+            "subject": "Vấn đề",
+            "message": "Nội dung",
+            "send_message": "Gửi thông tin"
+        },
+        "not_found_page": {
+            "error_not_found": "KHÔNG TÌM THẤY TRANG",
+            "button_gohome": "Trở Về Trang Chủ"
+        }
+    },
+    "footer": {
+        "copyright": "Thiết Kế Bởi"
+    }
+}

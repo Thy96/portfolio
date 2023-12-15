@@ -2,18 +2,21 @@ import React from "react";
 import classnames from "classnames/bind";
 import styles from "./Contact.module.scss";
 
+import { useTranslation } from 'react-i18next';
+
 const cx = classnames.bind(styles);
 
 const Contact = () => {
+    const { t } = useTranslation()
     return (
         <main className={cx("contact-page")}>
             <div className="wrapper">
-                <div className="title-page">CONTACT</div>
-                <div className="sub-title-page">CONTACT ME</div>
+                <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.contact_page.title_page')}</div>
+                <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.contact_page.sub_title_page')}</div>
 
                 <div className="info-box">
                     <div className={cx("flex", "flex-justify")}>
-                        <div className={cx("box")}>
+                        <div className={cx("box", "p-ani-fadeInRight", "p-delay_1s")}>
                             <figure>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -23,12 +26,12 @@ const Contact = () => {
                                 </svg>
                             </figure>
                             <div className={cx("title")}>
-                                <h3>My Address</h3>
-                                <p>166/3 Dang Van Bi street, Ward Binh Tho, Thu Duc city</p>
+                                <h3>{t('main.contact_page.my_address')}</h3>
+                                <p>{t('main.contact_page.address')}</p>
                             </div>
                         </div>
 
-                        <div className={cx("box")}>
+                        <div className={cx("box", "p-ani-fadeInRight", "p-delay_4s")}>
                             <figure>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +41,7 @@ const Contact = () => {
                                 </svg>
                             </figure>
                             <div className={cx("title")}>
-                                <h3>Social Profiles</h3>
+                                <h3>{t('main.contact_page.social_profiles')}</h3>
                                 <ul>
                                     <li>
                                         <a href="https://twitter.com/" target="_blank" rel="noreferrer">
@@ -74,7 +77,7 @@ const Contact = () => {
                             </div>
                         </div>
 
-                        <div className={cx("box")}>
+                        <div className={cx("box", "p-ani-fadeInRight", "p-delay_6s")}>
                             <figure>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -84,12 +87,12 @@ const Contact = () => {
                                 </svg>
                             </figure>
                             <div className={cx("title")}>
-                                <h3>Email Me</h3>
+                                <h3>Email</h3>
                                 <p>caodinhthy1996@gmail.com</p>
                             </div>
                         </div>
 
-                        <div className={cx("box")}>
+                        <div className={cx("box", "p-ani-fadeInRight", "p-delay_9s")}>
                             <figure>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -99,20 +102,20 @@ const Contact = () => {
                                 </svg>
                             </figure>
                             <div className={cx("title")}>
-                                <h3>Call Me</h3>
+                                <h3>{t('main.contact_page.call_me')}</h3>
                                 <p>0937804498</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className={cx('submit-contact')}>
+                    <div className={cx('submit-contact', "p-ani-fadeInRight", "p-delay_12s")}>
                         <form action="forms/contact.php" method="post">
-                            <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required="" />
-                            <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required="" />
-                            <input type="text" className="form-control" name="subject" id="subject" placeholder="Subject" required="" />
-                            <textarea className="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+                            <input type="text" name="name" className="form-control" id="name" placeholder={t('main.contact_page.your_name')} required="" />
+                            <input type="email" className="form-control" name="email" id="email" placeholder={t('main.contact_page.your_email')} required="" />
+                            <input type="text" className="form-control" name="subject" id="subject" placeholder={t('main.contact_page.subject')} required="" />
+                            <textarea className="form-control" name="message" rows="5" placeholder={t('main.contact_page.message')} required=""></textarea>
                         </form>
-                        <button type="submit">Send Message</button>
+                        <button type="submit">{t('main.contact_page.send_message')}</button>
                     </div>
                 </div>
             </div>

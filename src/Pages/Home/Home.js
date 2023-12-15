@@ -2,17 +2,19 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import classNames from "classnames/bind";
 import styles from "./Home.module.scss";
+import { useTranslation } from 'react-i18next';
 
 const cx = classNames.bind(styles);
 
-const Home = ({ textEnter, textLeave }) => {
+const Home = ({ hoverZoomOut, hoverZoomIn }) => {
+    const { t } = useTranslation()
     return (
         <>
             <main className={cx("home-page")}>
                 <div className={cx("wrapper")}>
-                    <h2>WELCOME TO MY WORLD</h2>
-                    <h3>
-                        Hi, I’m Thy <br className="sp-767" />a <b onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                    <h2 className="p-ani-fadeInBlur p-delay_1s">{t('main.home_page.title_main')}</h2>
+                    <h3 className="p-ani-fadeInBlur p-delay_4s">
+                        {t('main.home_page.title_say_hi')} <br className="sp-767" /><b onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn}>
                             <TypeAnimation
                                 sequence={[
                                     "Front End",
@@ -27,17 +29,14 @@ const Home = ({ textEnter, textLeave }) => {
                         </b>
 
                     </h3>
-                    <p>
-                        I use animation as a third dimension by which to
-                        simplify experiences and kuiding thro each and every
-                        interaction. I’m not adding motion just to spruce things
-                        up, but doing it in ways that.
+                    <p className="p-ani-fadeInBlur p-delay_5s">
+                        {t('main.home_page.description')}
                     </p>
 
                     <div className={cx("social")}>
-                        <h4 className={cx("social-title")}>FIND WITH ME</h4>
+                        <h4 className={cx("social-title", "p-ani-fadeInDown", "p-delay_8s")}>{t('main.home_page.social_title')}</h4>
                         <ul className={cx("social-link")}>
-                            <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                            <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn} className="p-ani-fadeInUp p-delay_8s">
                                 <a href="https://twitter.com/" target="_blank" rel="noreferrer">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +46,7 @@ const Home = ({ textEnter, textLeave }) => {
                                     </svg>
                                 </a>
                             </li>
-                            <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                            <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn} className="p-ani-fadeInUp p-delay_11s">
                                 <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +56,7 @@ const Home = ({ textEnter, textLeave }) => {
                                     </svg>
                                 </a>
                             </li>
-                            <li onMouseEnter={textEnter} onMouseLeave={textLeave}>
+                            <li onMouseEnter={hoverZoomOut} onMouseLeave={hoverZoomIn} className="p-ani-fadeInUp p-delay_14s">
                                 <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

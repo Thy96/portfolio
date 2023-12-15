@@ -1,0 +1,113 @@
+{
+    "header": {
+        "home": "Home",
+        "about": "About",
+        "resume": "Resume",
+        "service": "Service",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+    },
+    "main": {
+        "home_page": {
+            "title_main": "WELCOME TO MY WORLD",
+            "title_say_hi": "Hi!! I’m Thy a",
+            "description": "To become a professional programmer. The way to get started is to quit talking and begin doing. And on the way to success, there is no trace of lazy men.",
+            "social_title": "FIND WITH ME"
+        },
+        "about_page": {
+            "title_page": "ABOUT",
+            "sub_title_page": "LEARN MORE ABOUT ME",
+            "introduce_about_me1": "I'm front-end developer with 2.5+ years of experience designing and building responsive web design and Content Management System (CMS). Proficient with HTML5/CSS/JS/Wordpress and JS Framework.",
+            "introduce_about_me2": {
+                "title_birthday": "Birthday",
+                "date_birthday": "21 September 1996",
+                "title_age": "Age",
+                "title_degree": "Degree",
+                "vocational_degree": "The Degree Of Associate",
+                "title_phone": "Phone",
+                "title_city": "City",
+                "name_city": "Ho Chi Minh"
+            },
+            "skill": "Skill"
+        },
+        "resume_page": {
+            "title_page": "RESUME",
+            "sub_title_page": "CHECK MY RESUME",
+            "sumary": {
+                "title": "Sumary",
+                "description": "Hello! I'm a Front-End DEV. Basically, I like creating cool designs and creating polished & meaningful user experiences.",
+                "address": "53/14/8/9 Street (No.)4 , Truong Tho Ward, Thu Duc City, Ho Chi Minh City."
+            },
+            "education": {
+                "title": "Education",
+                "review_description1": "Study graphic design website.",
+                "review_description2": "Design website interface with HTML, CSS, JS for customers.",
+                "review_description3": "Observe, learn and catch customers’ taste well.",
+                "review_description4": "Improve work skills.",
+                "review_description5": "Assist in controlling products goods.",
+                "review_description6": "Attend the coder skills course at the school."
+            },
+            "professional_experience": {
+                "title": "Professional Experience",
+                "present": "Present",
+                "review_description1": "I have been working for 6 months in freelancer projects.",
+                "review_description2": "I started working at Hong Kong's 2epay company for about 1 year in website design management.",
+                "review_description3": "I started working at Japanese company Protage for about a year and a half on designing effects.",
+                "review_description4": "I started working at Japanese company Allgrowlabo for about 3 year on WORDPRESS/CMS and 1 year on ReactJS.",
+                "review_description5": "Design mobile website and programming PC according to customer requirements."
+            }
+        },
+        "service_page": {
+            "title_page": "SERVICES",
+            "sub_title_page": "MY SERVICES",
+            "title_web_design": "Web Design",
+            "web_design_description": "Our approach to website design is to create a website that strengthens your company’s",
+            "title_web_design_popup": "Web Design",
+            "web_design_description_popup": "Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience.",
+
+            "title_web_development": "Web Development",
+            "web_development_description": "The web development process involves the use of defined technical and coding elements",
+            "title_web_development_popup": "Web Development",
+            "web_development_description_popup": "The web development process involves the use of defined technical and coding elements in the design process and coding them into a custom theme.",
+
+            "title_mobile_development": "Mobile Development",
+            "mobile_development_description": "With an increasing importance being given to smart phones, and mobile",
+            "title_mobile_development_popup": "Web Development",
+            "mobile_development_description_popup": "With an increasing importance being given to smart phones, and mobile apps, it has become immensely important to include app development as part of web design services. Our team is known to provide excellent and extraordinary apps that are unique in every way. All the apps developed by our team are based on providing interesting features combined with enhanced functionality. With a mobile app in place, you can increase the reach of your brand and broaden its horizons too. You can have an easy to use professional app created that provides ease of functionality and an amazing appeal.",
+
+            "title_seo_optimization": "SEO Optimization",
+            "seo_optimization_description": "Search engine optimization (SEO) is the process of improving the visibility of",
+            "title_seo_optimization_popup": "SEO Optimization",
+            "seo_optimization_description_popup": "Search engine optimization (SEO) is the process of improving the visibility of a web site in search engines. Consumer puts a lot of trust in search engines to find what they need. Google receives 34,000 searches per second. Those searches involve finding products, reviewing brands, and looking up business locations.",
+
+            "title_social_media": "Social Media",
+            "social_media_description": "Social Media, has become an essential tool of marketing an online business",
+            "title_social_media_popup": "Social Media",
+            "social_media_description_popup": "Social Media, has become an essential tool of marketing an online business. It gives you a platform to interact and inform people about yourself and your brand. The concept of social media basically refers to the task of promoting websites or business through social media platforms."
+        },
+        "portfolio_page": {
+            "title_page": "PORTFOLIO",
+            "sub_title_page": "MY WORKS"
+        },
+        "contact_page": {
+            "title_page": "CONTACT",
+            "sub_title_page": "CONTACT ME",
+            "my_address": "My Address",
+            "address": "53/14/8/9 Street (No.)4 , Truong Tho Ward, Thu Duc City, Ho Chi Minh City.",
+            "social_profiles": "Social Profiles",
+            "call_me": "Call Me",
+            "your_name": "Your Name",
+            "your_email": "Your Email",
+            "subject": "Subject",
+            "message": "Message",
+            "send_message": "Send Message"
+        },
+        "not_found_page": {
+            "error_not_found": "PAGE NOT FOUND",
+            "button_gohome": "Go Home"
+        }
+    },
+    "footer": {
+        "copyright": "Designed By"
+    }
+}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./assets/css/style.css";
+
+// Component Pages
 import Header from "./Component/Header/Header";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
@@ -12,28 +14,29 @@ import Footer from "./Component/Footer/Footer";
 import MotionCursor from "./Component/MotionCursor/MotionCursor";
 import LoadingPage from "./Component/LoadingPage/LoadingPage";
 
+import NotFound from "./Pages/NotFound/NotFound";
 function App() {
     const [cursorVariant, setCursorVariant] = useState("default");
 
-    const textEnter = () => {
-        setCursorVariant("text");
+    const hoverZoomOut = () => {
+        setCursorVariant("zoomout");
     };
 
-    const textLeave = () => {
-        setCursorVariant("default");
+    const hoverZoomIn = () => {
+        setCursorVariant("zoomin");
     };
     return (
         <>
             <LoadingPage></LoadingPage>
-            <Header textEnter={textEnter} textLeave={textLeave}></Header>
+            <Header hoverZoomOut={hoverZoomOut} hoverZoomIn={hoverZoomIn}></Header>
 
             <Routes>
                 <Route
                     path="/thy_portfolio/"
                     element={
                         <Home
-                            textEnter={textEnter}
-                            textLeave={textLeave}
+                            hoverZoomOut={hoverZoomOut}
+                            hoverZoomIn={hoverZoomIn}
                         ></Home>
                     }
                 ></Route>
@@ -45,6 +48,8 @@ function App() {
                     element={<Portfolio></Portfolio>}
                 ></Route>
                 <Route path="/thy_portfolio/contact" element={<Contact></Contact>}></Route>
+                <Route path="*" element={<NotFound hoverZoomOut={hoverZoomOut} hoverZoomIn={hoverZoomIn}></NotFound>}></Route>
+
             </Routes>
 
             <Footer></Footer>

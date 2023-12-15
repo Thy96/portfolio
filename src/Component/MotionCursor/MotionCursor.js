@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 
-const MotionCursor = ({cursorVariant}) => {
+const MotionCursor = ({ cursorVariant }) => {
 
     const [mousePosition, setMousePosition] = useState({
         x: 0,
@@ -9,12 +9,12 @@ const MotionCursor = ({cursorVariant}) => {
     });
 
     const variants = {
-        default: {
+        zoomin: {
             x: mousePosition.x - 13,
             y: mousePosition.y - 13,
             background: "#18d26e",
         },
-        text: {
+        zoomout: {
             height: 60,
             width: 60,
             x: mousePosition.x - 28,

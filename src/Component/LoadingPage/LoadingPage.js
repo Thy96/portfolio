@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Lottie from "react-lottie";
-import * as location from "../../assets/json/79794-world-locations.json";
-import * as success from "../../assets/json/1127-success.json";
+import * as location from "../../assets/json_loading_page/79794-world-locations.json";
+import * as success from "../../assets/json_loading_page/1127-success.json";
 
 import classnames from 'classnames/bind';
 import styles from './LoadingPage.module.scss';

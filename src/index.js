@@ -6,13 +6,18 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ScrollToTop from "./Component/ScrollToTop/ScrollToTop";
 
+import i18n from './Component/Translation/i18n';
+import { I18nextProvider } from 'react-i18next';
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <Router>
-            <ScrollToTop></ScrollToTop>
-            <App />
-        </Router>
+        <I18nextProvider i18n={i18n}>
+            <Router>
+                <ScrollToTop></ScrollToTop>
+                <App />
+            </Router>
+        </I18nextProvider>
     </React.StrictMode>
 );
 
