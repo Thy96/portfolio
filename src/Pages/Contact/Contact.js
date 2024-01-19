@@ -109,7 +109,7 @@ const Contact = () => {
                     </div>
 
                     <div className={cx('submit-contact', "p-ani-fadeInRight", "p-delay_12s")}>
-                        <form action="mailto:caodinhthy1996@gmail.com" method="post" enctype="text/plain">
+                        <form action="mail" method="post" enctype="text/plain">
                             <input type="text" name="name" className="form-control" id="name" placeholder={t('main.contact_page.your_name')} required="" />
                             <input type="email" className="form-control" name="email" id="email" placeholder={t('main.contact_page.your_email')} required="" />
                             <input type="text" className="form-control" name="subject" id="subject" placeholder={t('main.contact_page.subject')} required="" />
