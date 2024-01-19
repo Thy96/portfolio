@@ -1,31 +1,34 @@
 {
   "files": {
-    "main.css": "/thy_portfolio/static/css/main.33981648.css",
-    "main.js": "/thy_portfolio/static/js/main.571c4c4f.js",
+    "main.css": "/thy_portfolio/static/css/main.63335ea1.css",
+    "main.js": "/thy_portfolio/static/js/main.250e8aca.js",
     "static/js/787.267b80b0.chunk.js": "/thy_portfolio/static/js/787.267b80b0.chunk.js",
     "static/media/background.gif": "/thy_portfolio/static/media/background.fa83757e2d6da73c5a8d.gif",
     "static/media/man.jpg": "/thy_portfolio/static/media/man.1f27ab8e972111dbf830.jpg",
+    "static/media/portfolio-9.jpg": "/thy_portfolio/static/media/portfolio-9.3c0d9e3f135734dcf646.jpg",
     "static/media/portfolio-2.jpg": "/thy_portfolio/static/media/portfolio-2.f6a28adc61c137fbce83.jpg",
     "static/media/portfolio-4.jpg": "/thy_portfolio/static/media/portfolio-4.a1e79009d0f1b2edf67b.jpg",
-    "static/media/portfolio-7.jpg": "/thy_portfolio/static/media/portfolio-7.134caade31db77cea4a6.jpg",
+    "static/media/portfolio-6.jpg": "/thy_portfolio/static/media/portfolio-6.134caade31db77cea4a6.jpg",
+    "static/media/portfolio-10.jpg": "/thy_portfolio/static/media/portfolio-10.86ae645743e8f15aabb3.jpg",
+    "static/media/portfolio-8.jpg": "/thy_portfolio/static/media/portfolio-8.8344eb8f0b732d75696c.jpg",
     "static/media/portfolio-5.jpg": "/thy_portfolio/static/media/portfolio-5.7dc65ad457bd8bd86bce.jpg",
     "static/media/web-design.jpg": "/thy_portfolio/static/media/web-design.0cdd45e77d7c6fb6b731.jpg",
     "static/media/portfolio-3.jpg": "/thy_portfolio/static/media/portfolio-3.72a8b9712a2c09ac8c86.jpg",
     "static/media/portfolio-1.jpg": "/thy_portfolio/static/media/portfolio-1.86d8033e3099e8fd4d4f.jpg",
     "static/media/web-development.jpg": "/thy_portfolio/static/media/web-development.efa40605932d52a1203f.jpg",
-    "static/media/portfolio-6.jpg": "/thy_portfolio/static/media/portfolio-6.625ba1524788c5255d3e.jpg",
     "static/media/social-media.jpg": "/thy_portfolio/static/media/social-media.1ef7f0dd064ba1c5da59.jpg",
     "static/media/seo-optimization.jpg": "/thy_portfolio/static/media/seo-optimization.dd75a89e602e628df1c4.jpg",
+    "static/media/portfolio-7.jpg": "/thy_portfolio/static/media/portfolio-7.c9a70f0ca731bab21e9b.jpg",
     "static/media/mobile-development.jpg": "/thy_portfolio/static/media/mobile-development.b8cdbf9c9730863ebe90.jpg",
     "static/media/pointer.svg": "/thy_portfolio/static/media/pointer.e6a0a6d192726d429b5d.svg",
     "static/media/cursor.svg": "/thy_portfolio/static/media/cursor.dd8abc7f1a2b210de344.svg",
     "index.html": "/thy_portfolio/index.html",
-    "main.33981648.css.map": "/thy_portfolio/static/css/main.33981648.css.map",
-    "main.571c4c4f.js.map": "/thy_portfolio/static/js/main.571c4c4f.js.map",
+    "main.63335ea1.css.map": "/thy_portfolio/static/css/main.63335ea1.css.map",
+    "main.250e8aca.js.map": "/thy_portfolio/static/js/main.250e8aca.js.map",
     "787.267b80b0.chunk.js.map": "/thy_portfolio/static/js/787.267b80b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33981648.css",
-    "static/js/main.571c4c4f.js"
+    "static/css/main.63335ea1.css",
+    "static/js/main.250e8aca.js"
   ]
 }
