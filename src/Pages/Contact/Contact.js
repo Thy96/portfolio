@@ -14,7 +14,7 @@ const Contact = () => {
                 <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.contact_page.title_page')}</div>
                 <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.contact_page.sub_title_page')}</div>
 
-                <div className="info-box">
+                <div className="info-box p-ani-fadeInUp p-delay_1s">
                     <div className={cx("flex", "flex-justify")}>
                         <div className={cx("box", "p-ani-fadeInRight", "p-delay_1s")}>
                             <figure>
@@ -54,7 +54,7 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+                                        <a href="https://www.facebook.com/SaCDT" target="_blank" rel="noreferrer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 320 512"
@@ -64,7 +64,7 @@ const Contact = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                                        <a href="https://www.instagram.com/sa.cdt/" target="_blank" rel="noreferrer">
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 viewBox="0 0 448 512"
@@ -109,13 +109,13 @@ const Contact = () => {
                     </div>
 
                     <div className={cx('submit-contact', "p-ani-fadeInRight", "p-delay_12s")}>
-                        <form action="forms/contact.php" method="post">
+                        <form action="mailto:caodinhthy1996@gmail.com" method="post" enctype="text/plain">
                             <input type="text" name="name" className="form-control" id="name" placeholder={t('main.contact_page.your_name')} required="" />
                             <input type="email" className="form-control" name="email" id="email" placeholder={t('main.contact_page.your_email')} required="" />
                             <input type="text" className="form-control" name="subject" id="subject" placeholder={t('main.contact_page.subject')} required="" />
                             <textarea className="form-control" name="message" rows="5" placeholder={t('main.contact_page.message')} required=""></textarea>
+                            <button type="submit">{t('main.contact_page.send_message')}</button>
                         </form>
-                        <button type="submit">{t('main.contact_page.send_message')}</button>
                     </div>
                 </div>
             </div>

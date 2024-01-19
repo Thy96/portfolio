@@ -4,21 +4,44 @@ import styles from "./About.module.scss";
 import images from "../../assets/img";
 import { useTranslation } from 'react-i18next';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+
 const cx = classNames.bind(styles);
 
 const About = () => {
     const { t } = useTranslation()
+
+    const onButtonClickDownPDF = () => {
+        const pdfUrl = "CaoDinhThy_CV.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "CaoDinhThy_CV.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <main className={cx("about-page")}>
             <div className="wrapper">
                 <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.about_page.title_page')}</div>
                 <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.about_page.sub_title_page')}</div>
 
-                <div className="info-box">
+                <div className="info-box p-ani-fadeInUp p-delay_1s">
                     <div className={cx("flex", "flex-justify")}>
-                        <figure className="p-ani-fadeInLeft p-delay_3s">
-                            <img src={images.man} alt="man-avatar" />
-                        </figure>
+                        <div className={cx('img-pdf')}>
+                            <figure className="p-ani-fadeInLeft p-delay_3s">
+                                <img src={images.man} alt="man-avatar" />
+                            </figure>
+                            <button onClick={onButtonClickDownPDF} className={cx('button-pdf', 'p-ani-fadeInLeft p-delay_6s')}>
+                                <span className={cx('circle2')}>
+                                    <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon>
+                                </span>
+                                <span className={cx('title2')}>{t('main.about_page.download_cv')}</span>
+                                <span className={cx('title-hover2')}>{t('main.about_page.click_here')}</span>
+                            </button>
+                        </div>
                         <div className={cx("introduce")}>
                             <h3 className="p-ani-fadeInRight p-delay_6s">
                                 {t('main.about_page.introduce_about_me1')}
@@ -54,9 +77,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>HTML5</h5>
                                     </div>
-                                    {/* <div className="progress progress-striped">
-                                        <div className="progress-bar"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* PHP SKILL */}
@@ -64,9 +84,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>PHP</h5>
                                     </div>
-                                    {/* <div className="progress1 progress-striped">
-                                        <div className="progress-bar1"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* CSS SKILL */}
@@ -74,9 +91,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>CSS/SCSS</h5>
                                     </div>
-                                    {/* <div className="progress2 progress-striped">
-                                        <div className="progress-bar2"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* WORDPRESS/CMS SKILL */}
@@ -84,9 +98,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>WORDPRESS/CMS</h5>
                                     </div>
-                                    {/* <div className="progress3 progress-striped">
-                                        <div className="progress-bar3"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* JAVASCRIPT SKILL */}
@@ -94,9 +105,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>JAVASCRIPT</h5>
                                     </div>
-                                    {/* <div className="progress4 progress-striped">
-                                        <div className="progress-bar4"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* REACTJS SKILL */}
@@ -104,9 +112,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>REACTJS</h5>
                                     </div>
-                                    {/* <div className="progress5 progress-striped">
-                                        <div className="progress-bar5"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* JS */}
@@ -114,9 +119,6 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>JQuery</h5>
                                     </div>
-                                    {/* <div className="progress2 progress-striped">
-                                        <div className="progress-bar2"></div>
-                                    </div> */}
                                 </div>
 
                                 {/* Redux */}
@@ -124,9 +126,13 @@ const About = () => {
                                     <div className={cx('title-percent')}>
                                         <h5>REDUX</h5>
                                     </div>
-                                    {/* <div className="progress2 progress-striped">
-                                        <div className="progress-bar2"></div>
-                                    </div> */}
+                                </div>
+
+                                {/* GSAP */}
+                                <div className={cx('pro')}>
+                                    <div className={cx('title-percent')}>
+                                        <h5>GSAP</h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>

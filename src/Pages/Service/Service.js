@@ -18,7 +18,7 @@ const Service = () => {
                 <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.service_page.title_page')}</div>
                 <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.service_page.sub_title_page')}</div>
 
-                <div className="info-box">
+                <div className="info-box p-ani-fadeInUp p-delay_1s">
                     <div className={cx("flex", "flex-justify")}>
                         <Popup
                             trigger={

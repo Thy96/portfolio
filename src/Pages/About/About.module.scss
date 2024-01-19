@@ -1,17 +1,83 @@
+$btn-color: #3CA2A2;
 .about-page{
     .flex-justify{
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: flex-start;
-        figure{
+        .img-pdf{
             width: 30%;
-            -webkit-box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
-            -moz-box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
-            box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            text-align: center;
+            figure{
+                -webkit-box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
+                -moz-box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
+                box-shadow: 0px 0px 6px 1px rgba(255,255,255,1);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .button-pdf {
+                position: relative;
+                height: 50px;
+                width: 200px;
+                line-height: 50px;
+                padding: 0;
+                border-radius: 50px;
+                background: #fdfdfd;
+                border: 2px solid #18d26e;
+                margin: 30px auto 0;
+                transition: .5s;
+                .circle2 {
+                    display: block;
+                    background-color: #18d26e;
+                    color: #fff;
+                    position: absolute;
+                    margin: 3px;
+                    line-height: 42px;
+                    height: 40px;
+                    width: 40px;
+                    top: 0;
+                    left: 0;
+                    transition: .5s;
+                    border-radius: 50%;
+                    font-size: 20px;
+                }
+                .title2, .title-hover2 {
+                    position: absolute;
+                    text-align: center;
+                    margin: 0 auto;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #18d26e;
+                    left: 55%;
+                    top: 50%;
+                    width: 100%;
+                    transform: translate(-50%, -50%);
+                    line-height: 160%;
+                    transition: .5s;
+                }
+                .title-hover2 {
+                    opacity: 0;
+                    color: #fff;
+                }
+                &:hover{
+                    background-color: #18d26e;
+                    .circle2 {
+                        color: #18d26e;
+                        left: 100%;
+                        margin-left: -45px;
+                        background-color: #fdfdfd;
+                    }
+                    .title2 {
+                        opacity: 0;
+                        left: 40%;
+                    }
+                    .title-hover2 {
+                        opacity: 1;
+                        left: 40%;
+                    }
+                }
             }
         }
         .introduce{
@@ -65,7 +131,7 @@
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 5px;
-                        h5, p{
+                        h5{
                             font-size: 16px;
                             font-weight: normal;
                             position: relative;
@@ -102,12 +168,15 @@
 @media screen and (max-width: 767px) {
     .about-page{
         .flex-justify{
-            figure{
+            .img-pdf{
                 width: 100%;
+                .button-pdf{
+                    margin-top: 20px;
+                }
             }
             .introduce{
                 width: 100%;
-                margin-top: 10px;
+                margin-top: 30px;
                 h3{
                     font-size: 20px;
                 }
@@ -125,8 +194,13 @@
                         width: 48%;
                         margin-top: 15px;
                         .title-percent{
-                            h5, p{
+                            h5{
                                 font-size: 12px;
+                                padding-left: 15px;
+                                &::before{
+                                    font-size: 13px;
+                                    top: -2px;
+                                }
                             }
                         }
                     }

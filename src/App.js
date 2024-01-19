@@ -17,6 +17,8 @@ import LoadingPage from "./Component/LoadingPage/LoadingPage";
 import NotFound from "./Pages/NotFound/NotFound";
 function App() {
     const [cursorVariant, setCursorVariant] = useState("default");
+    const [loading, setloading] = useState(undefined);
+    const [completed, setcompleted] = useState(undefined);
 
     const hoverZoomOut = () => {
         setCursorVariant("zoomout");
@@ -25,9 +27,10 @@ function App() {
     const hoverZoomIn = () => {
         setCursorVariant("zoomin");
     };
+
     return (
         <>
-            <LoadingPage></LoadingPage>
+            <LoadingPage loading={loading} setloading={setloading} completed={completed} setcompleted={setcompleted}></LoadingPage>
             <Header hoverZoomOut={hoverZoomOut} hoverZoomIn={hoverZoomIn}></Header>
 
             <Routes>
@@ -37,6 +40,7 @@ function App() {
                         <Home
                             hoverZoomOut={hoverZoomOut}
                             hoverZoomIn={hoverZoomIn}
+                            completed={completed}
                         ></Home>
                     }
                 ></Route>
@@ -49,7 +53,6 @@ function App() {
                 ></Route>
                 <Route path="/thy_portfolio/contact" element={<Contact></Contact>}></Route>
                 <Route path="*" element={<NotFound hoverZoomOut={hoverZoomOut} hoverZoomIn={hoverZoomIn}></NotFound>}></Route>
-
             </Routes>
 
             <Footer></Footer>

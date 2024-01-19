@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Lottie from "react-lottie";
 import * as location from "../../assets/json_loading_page/79794-world-locations.json";
 import * as success from "../../assets/json_loading_page/1127-success.json";
@@ -8,7 +8,7 @@ import styles from './LoadingPage.module.scss';
 
 const cx = classnames.bind(styles)
 
-const LoadingPage = () => {
+const LoadingPage = ({ loading, setloading, completed, setcompleted }) => {
     const defaultOptions1 = {
         loop: true,
         autoplay: true,
@@ -26,8 +26,7 @@ const LoadingPage = () => {
             preserveAspectRatio: "xMidYMid slice",
         },
     };
-    const [loading, setloading] = useState(undefined);
-    const [completed, setcompleted] = useState(undefined);
+
 
     useEffect(() => {
         setTimeout(() => {
@@ -36,7 +35,7 @@ const LoadingPage = () => {
                 setcompleted(true);
             }, 1000);
         }, 2000);
-    }, []);
+    }, [setloading, setcompleted]);
 
     return (
         <>

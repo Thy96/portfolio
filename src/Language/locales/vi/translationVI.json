@@ -17,6 +17,8 @@
         "about_page": {
             "title_page": "GIỚI THIỆU",
             "sub_title_page": "SƠ LƯỢC VỀ TÔI",
+            "download_cv": "Tải CV",
+            "click_here": "Nhấp tại đây",
             "introduce_about_me1": "Tôi là nhà phát triển front-end với hơn 2,5 năm kinh nghiệm trong việc thiết kế, xây dựng hệ thống quản lý nội dung và thiết kế web đáp ứng (CMS). Có kinh nghiệm làm việc với HTML5/CSS/JS/Wordpress và JS Framework.",
             "introduce_about_me2": {
                 "title_birthday": "Sinh ngày",

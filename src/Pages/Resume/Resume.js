@@ -13,7 +13,7 @@ const Resume = () => {
                 <div className="title-page p-ani-fadeInUp p-delay_1s">{t('main.resume_page.title_page')}</div>
                 <div className="sub-title-page p-ani-fadeInUp p-delay_3s">{t('main.resume_page.sub_title_page')}</div>
 
-                <div className='info-box'>
+                <div className='info-box p-ani-fadeInUp p-delay_1s'>
                     <div className={cx('flex', 'flex-justify')}>
                         <div className={cx('box', 'p-ani-fadeInBlur', 'p-delay_1s')}>
                             <h3>{t('main.resume_page.sumary.title')}</h3>

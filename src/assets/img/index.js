@@ -12,6 +12,9 @@ const images = {
     portfolio_5: require('../img/portfolio-5.jpg'),
     portfolio_6: require('../img/portfolio-6.jpg'),
     portfolio_7: require('../img/portfolio-7.jpg'),
+    portfolio_8: require('../img/portfolio-8.jpg'),
+    portfolio_9: require('../img/portfolio-9.jpg'),
+    portfolio_10: require('../img/portfolio-10.jpg'),
     transEN: require('../img/en-flag-32x48.png'),
     transVI: require('../img/vi-flag-32x48.png'),
 }
