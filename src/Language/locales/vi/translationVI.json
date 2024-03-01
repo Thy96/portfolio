@@ -19,7 +19,7 @@
             "sub_title_page": "SƠ LƯỢC VỀ TÔI",
             "download_cv": "Tải CV",
             "click_here": "Nhấp tại đây",
-            "introduce_about_me1": "Tôi là nhà phát triển front-end với hơn 2,5 năm kinh nghiệm trong việc thiết kế, xây dựng hệ thống quản lý nội dung và thiết kế web đáp ứng (CMS). Có kinh nghiệm làm việc với HTML5/CSS/JS/Wordpress và JS Framework.",
+            "introduce_about_me1": "Tôi là nhà phát triển front-end với hơn 3 năm kinh nghiệm trong việc thiết kế, xây dựng hệ thống quản lý nội dung và thiết kế web đáp ứng (CMS). Có kinh nghiệm làm việc với HTML5/CSS/JS/Wordpress và JS Framework.",
             "introduce_about_me2": {
                 "title_birthday": "Sinh ngày",
                 "date_birthday": "21/09/1996",
@@ -100,7 +100,7 @@
             "call_me": "Số DT",
             "your_name": "Tên của bạn",
             "your_email": "Email của bạn",
-            "subject": "Vấn đề",
+            "your_phone": "Số điện thoại của bạn",
             "message": "Nội dung",
             "send_message": "Gửi thông tin"
         },

@@ -19,7 +19,7 @@
             "sub_title_page": "LEARN MORE ABOUT ME",
             "download_cv": "Download CV",
             "click_here": "Click here",
-            "introduce_about_me1": "I'm front-end developer with 2.5+ years of experience designing and building responsive web design and Content Management System (CMS). Proficient with HTML5/CSS/JS/Wordpress and JS Framework.",
+            "introduce_about_me1": "I'm front-end developer with 3+ years of experience designing and building responsive web design and Content Management System (CMS). Proficient with HTML5/CSS/JS/Wordpress and JS Framework.",
             "introduce_about_me2": {
                 "title_birthday": "Birthday",
                 "date_birthday": "21 September 1996",
@@ -100,7 +100,7 @@
             "call_me": "Call Me",
             "your_name": "Your Name",
             "your_email": "Your Email",
-            "subject": "Subject",
+            "your_phone": "Your Phone",
             "message": "Message",
             "send_message": "Send Message"
         },

@@ -3,6 +3,7 @@ import classnames from "classnames/bind";
 import styles from "./Contact.module.scss";
 
 import { useTranslation } from 'react-i18next';
+import MailTo from "../../Component/MailTo/MailTo";
 
 const cx = classnames.bind(styles);
 
@@ -109,13 +110,7 @@ const Contact = () => {
                     </div>
 
                     <div className={cx('submit-contact', "p-ani-fadeInRight", "p-delay_12s")}>
-                        <form action="/thy_portfolio/">
-                            <input type="text" name="name" className="form-control" id="name" placeholder={t('main.contact_page.your_name')} required="" />
-                            <input type="email" className="form-control" name="email" id="email" placeholder={t('main.contact_page.your_email')} required="" />
-                            <input type="text" className="form-control" name="subject" id="subject" placeholder={t('main.contact_page.subject')} required="" />
-                            <textarea className="form-control" name="message" rows="5" placeholder={t('main.contact_page.message')} required=""></textarea>
-                            <button type="submit">{t('main.contact_page.send_message')}</button>
-                        </form>
+                        <MailTo></MailTo>
                     </div>
                 </div>
             </div>
