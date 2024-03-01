@@ -11,6 +11,7 @@ const cx = classNames.bind(styles);
 
 const About = () => {
     const { t } = useTranslation()
+    const date = new Date();
 
     const onButtonClickDownPDF = () => {
         const pdfUrl = "CaoDinhThy_CV.pdf";
@@ -51,7 +52,7 @@ const About = () => {
                                     {t('main.about_page.introduce_about_me2.title_birthday')}: <span>{t('main.about_page.introduce_about_me2.date_birthday')}</span>
                                 </li>
                                 <li>
-                                    {t('main.about_page.introduce_about_me2.title_age')}: <span>27</span>
+                                    {t('main.about_page.introduce_about_me2.title_age')}: <span>{date.getFullYear() - 1996}</span>
                                 </li>
                                 <li>
                                     Github: <a href="https://github.com/Thy96" target="_blank" rel="noreferrer"><span>https://github.com/Thy96</span></a>
